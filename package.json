@@ -1,5 +1,5 @@
 {
-  "name": "firestarter-cycle",
+  "name": "cycle-base",
   "version": "0.0.1",
   "author": "Bill Johnson",
   "scripts": {
@@ -19,7 +19,7 @@
     "babel-loader": "6.2.0",
     "babel-core": "6.3.17",
     "babel-register": "6.3.13",
-    "babel-preset-react": "6.3.13",
+    "babel-plugin-transform-react-jsx": "6.3.13",
     "babel-preset-es2015": "6.3.13",
     "babel-preset-stage-0": "6.3.13",
     "piping": "0.3.0",

@@ -26,6 +26,10 @@
     "piping": "0.3.0",
     "webpack": "2.0.1-beta",
     "webpack-dev-middleware": "1.4.0",
-    "webpack-hot-middleware": "2.6.0"
+    "webpack-hot-middleware": "2.6.0",
+    "style-loader": "0.13.0",
+    "css-loader": "0.23.0",
+    "sass-loader": "3.1.2",
+    "node-sass": "3.4.2"
   }
 }

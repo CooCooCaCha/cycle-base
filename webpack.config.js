@@ -21,7 +21,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js?$/, loaders: ['babel'], include: path.join(__dirname, 'src'), exclude: /node_modules/ },
-      { test: /\.css$/, loader: 'style-loader!css-loader?sourceMap', include: path.join(__dirname, 'src/styles') },
+      { test: /\.css$/, loader: 'style!css?sourceMap', include: path.join(__dirname, 'src/styles') },
+      { test: /\.scss$/, loader: 'style!css!sass?sourceMap', include: path.join(__dirname, 'src/styles') }
     ]
   },
 

@@ -4,7 +4,8 @@ import {h, makeDOMDriver} from "@cycle/dom";
 import {makeHistoryDriver, filterLinks} from "@cycle/history";
 import makeTimeTravel from 'cycle-time-travel';
 
-import app from "./components/app.js"
+import "./styles/core.scss";
+import app from "./components/app.js";
 
 function main(drivers) {
   const {DOM, History} = drivers;

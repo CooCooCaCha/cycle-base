@@ -4,8 +4,6 @@ var webpack = require("webpack");
 let vendorModules = /node_modules/;
 
 module.exports = {
-  devtool: "eval-source-map",
-
   entry: {
     app: [
       "./src/main.js",
@@ -16,7 +14,8 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.join(__dirname, "./build"),
-    publicPath: "/build/"
+    publicPath: "/build/",
+    sourceMapFilename: "debug/[file].map"
   },
 
   module: {

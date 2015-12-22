@@ -1,3 +1,4 @@
+import morgan               from "morgan";
 import webpack              from "webpack";
 import webpackConfig        from "./webpack.config.js";
 import webpackDevMiddleware from "webpack-dev-middleware";
@@ -10,6 +11,9 @@ var port = 8080;
 var compiler = webpack(webpackConfig);
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: webpackConfig.output.publicPath }));
 app.use(webpackHotMiddleware(compiler));
+
+// Request logging
+app.use(morgan("combined"));
 
 // Base route
 app.get("/*", (req, res) => {
